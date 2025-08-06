@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+
+.main div {
+    height: 100vh;
+    /* background-color: aqua; */
+}
