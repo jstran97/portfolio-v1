@@ -83,7 +83,7 @@ export default function Home() {
           trigger: '.about',
           start: "top 80%"
         },
-        y: 50,
+        y: 0,
         opacity: 0,
         duration: 0.8,
         stagger: 0.2
@@ -95,7 +95,7 @@ export default function Home() {
           trigger: '.projects',
           start: "top 80%"
         },
-        y: 50,
+        y: 0,
         opacity: 0,
         duration: 0.6,
         stagger: 0.2
@@ -107,7 +107,7 @@ export default function Home() {
           trigger: '.skills',
           start: "top 80%"
         },
-        scale: 0.8,
+        scale: 1,
         opacity: 0,
         duration: 0.5,
         stagger: 0.1
@@ -168,6 +168,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 text-white font-sans">
+      {/* <main className="min-h-screen bg-white dark:bg-gray-900 text-white font-sans"></main> */}
       {/* className="min-h-screen bg-white dark:bg-gray-900 text-white font-sans" */}
       {/* <header className="fixed top-0 left-0 w-full bg-gray-950 bg-opacity-90 z-50 shadow-md">
         <nav className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -202,6 +203,7 @@ export default function Home() {
         </p>
       </section> */}
       <AboutSection
+        className="dark:bg-gray-900"
         darkMode={darkMode}
       />
 

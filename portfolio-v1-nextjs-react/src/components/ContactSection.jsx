@@ -5,16 +5,13 @@ import { FaPhone } from "react-icons/fa6";
 
 export default function ContactSection({ darkMode }) {
     return(
-        <section id="contact" className="contact flex justify-center py-24 px-4 md:px-20"
-            // style={{
-            // backgroundColor: darkMode ? '#1a202c' : '#f3f4f6'
-            // }}
-            >
-            <div className="container" style={{
-                maxWidth: '1200px',
-                margin: '0 auto',
-                padding: '0 2rem'
-            }}>
+        // <section id="contact" className="contact flex justify-center py-24 px-4 md:px-20"
+        //     // style={{
+        //     // backgroundColor: darkMode ? '#1a202c' : '#f3f4f6'
+        //     // }}
+        //     >
+        <section id="contact" className="contact">
+            <div className="container">
                 <h2 className="section-title">Get In Touch</h2>
                 <div className="contact-content" style={{
                 display: 'grid',

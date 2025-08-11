@@ -2,19 +2,16 @@ import { LuArrowRight } from "react-icons/lu";
 
 export default function ProjectSection ({ darkMode, projects }) {
     return (
-        <section id="projects" className="projects flex justify-center py-24 px-4 md:px-20"
-            //     style={{
-            //     backgroundColor: darkMode ? '#1a202c' : '#f3f4f6',
-            //     // backgroundColor: 'white'
-            //     display: 'flex',
-            //     justifyContent: 'center'
-            // }}
-        >
-            <div className="container" style={{
-                maxWidth: '1200px',
-                margin: '0 auto',
-                padding: '0 2rem'
-            }}>
+        // <section id="projects" className="projects flex justify-center py-24 px-4 md:px-20"
+        //     //     style={{
+        //     //     backgroundColor: darkMode ? '#1a202c' : '#f3f4f6',
+        //     //     // backgroundColor: 'white'
+        //     //     display: 'flex',
+        //     //     justifyContent: 'center'
+        //     // }}
+        // >
+        <section id="projects" className="projects">
+            <div className="container">
                 <h2 className="section-title">My Projects</h2>
                 <div style={{
                     display: 'grid',
@@ -100,9 +97,9 @@ export default function ProjectSection ({ darkMode, projects }) {
 
                 {/* Add Project Button */}
                 <div style={{
-                textAlign: 'center',
-                marginTop: '3rem'
-                }}>
+                    textAlign: 'center',
+                    marginTop: '1rem'
+                    }}>
                 <button
                     className="btn btn-primary"
                     onClick={() => {

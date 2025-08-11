@@ -21,12 +21,9 @@ const skillsWithComponents = [
 export default function SkillSection({ darkMode }) {
 
     return(
-        <section id="skills" className="skills flex justify-center py-24 px-4 md:px-20">
-            <div className="container" style={{
-                maxWidth: '1200px',
-                margin: '0 auto',
-                padding: '0 2rem'
-            }}>
+        // <section id="skills" className="skills flex justify-center py-24 px-4 md:px-20">
+        <section id="skills" className="skills">
+            <div className="container">
                 <h2 className="section-title">My Skills</h2>
                 <div style={{
                     display: 'grid',

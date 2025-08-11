@@ -31,26 +31,29 @@ export default function Navigation({ toggleMenu, menuOpen }) {
             top: 0,
             left: 0,
             width: '100%',
-            padding: '1rem 0',
+            padding: '0.5rem 0',
             backgroundColor: 'rgba(249, 250, 251, 0.9)',
             backdropFilter: 'blur(10px)',
             zIndex: 100,
             transition: 'all 0.3s ease'
         }}>
             <div className="container" style={{
-                maxWidth: '1200px',
-                margin: '0 auto',
-                padding: '0 2rem',
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center'
             }}>
-                <a href="#" style={{
-                    fontSize: '1.5rem',
-                    fontWeight: 700
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center'
                 }}>
-                    <span className='text-primary'>My Portfolio</span>
-                </a>
+                    <a href="#" style={{
+                        fontSize: '1.5rem',
+                        fontWeight: 700
+                    }}>
+                        <span className='text-primary'>My Portfolio</span>
+                    </a>
+                </div>
 
                 <button className="mobile-menu-btn" onClick={toggleMenu}>
                     <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`}></i>
@@ -59,6 +62,8 @@ export default function Navigation({ toggleMenu, menuOpen }) {
                 <div className={`nav-links ${menuOpen ? 'active' : ''}`} style={{
                     display: 'flex',
                     gap: '2rem',
+                    justifyContent: 'center',
+                    alignItems: 'center'
                 }}>
                     <a href="#home" className="nav-link" style={{
                         color: 'var(--gray)',
@@ -84,5 +89,40 @@ export default function Navigation({ toggleMenu, menuOpen }) {
             </div>
         </nav>
 
+
+        // <nav className="fixed top-0 left-0 w-full py-2 bg-gray-50/90 backdrop-blur-sm z-[100] transition-all duration-300 ease-in">
+        //     <div className="container flex justify-between items-center">
+        //         {/* Logo/Portfolio section */}
+        //         <div className="flex items-center">
+        //             <a href="#" className="text-2xl font-bold">
+        //                 <span className="text-primary">My Portfolio</span>
+        //             </a>
+        //         </div>
+
+        //         {/* Mobile menu button */}
+        //         <button className="mobile-menu-btn" onClick={toggleMenu}>
+        //             <i className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+        //         </button>
+
+        //         {/* Navigation links */}
+        //         <div className={`nav-links ${menuOpen ? 'active' : ''} flex items-center gap-8`}>
+        //             <a href="#home" className="nav-link text-[var(--gray)] font-medium hover:text-[var(--primary)] transition-colors">
+        //                 Home
+        //             </a>
+        //             <a href="#about" className="nav-link text-[var(--gray)] font-medium hover:text-[var(--primary)] transition-colors">
+        //                 About
+        //             </a>
+        //             <a href="#projects" className="nav-link text-[var(--gray)] font-medium hover:text-[var(--primary)] transition-colors">
+        //                 Projects
+        //             </a>
+        //             <a href="#skills" className="nav-link text-[var(--gray)] font-medium hover:text-[var(--primary)] transition-colors">
+        //                 Skills
+        //             </a>
+        //             <a href="#contact" className="nav-link text-[var(--gray)] font-medium hover:text-[var(--primary)] transition-colors">
+        //                 Contact
+        //             </a>
+        //         </div>
+        //     </div>
+        // </nav>
     );
 }

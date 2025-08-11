@@ -59,20 +59,16 @@ export default function AboutSection({ darkMode }) {
         //     </div>
 
 
-        <section id="about" className="about flex justify-center py-24 px-4 md:px-20"
-            // style={{
-            //     display: 'flex',
-            //     justifyContent: 'center'
-            // bg-gray-800 
-            // dark:bg-gray-800
-            // }}
-        >
-            {/* <div className="container"> */}
-            <div className="container" style={{
-                maxWidth: '1200px',
-                margin: '0 auto',
-                padding: '0 2rem'
-            }}>
+        // <section id="about" className="about flex justify-center py-24 px-4 md:px-20"
+        //     // style={{
+        //     //     display: 'flex',
+        //     //     justifyContent: 'center'
+        //     // bg-gray-800
+        //     // dark:bg-gray-800
+        //     // }}
+        // >
+        <section id="about" className="about">
+            <div className="container">
                 <h2 className="section-title">About Me</h2>
                 <div style={{
                 display: 'grid',
@@ -92,7 +88,7 @@ export default function AboutSection({ darkMode }) {
                     boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)'
                     }} />
                 </div>
-                <div className="about-content text-black dark:text-white">
+                <div className="about-content">
                     <h3 style={{ fontSize: '1.75rem', marginBottom: '1.5rem' }}>
                     A passionate developer based in <span className="text-primary">Your Location</span>
                     </h3>

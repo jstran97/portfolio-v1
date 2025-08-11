@@ -9,9 +9,6 @@ export default function HeroSection({ darkMode }) {
             overflow: 'hidden'
           }}>
             <div className="container hero-content" style={{
-              maxWidth: '1200px',
-              margin: '0 auto',
-              padding: '0 2rem',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center'
@@ -30,7 +27,7 @@ export default function HeroSection({ darkMode }) {
                   marginBottom: '2rem',
                   color: 'var(--gray)'
                 }}>
-                  Full Stack Developer crafting beautiful & functional web experiences
+                  Full Stack Developer crafting beautiful and functional web experiences
                 </p>
                 <div style={{ display: 'flex', gap: '1rem' }}>
                   <a href="#projects" className="btn btn-primary">View My Work</a>
