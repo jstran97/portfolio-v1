@@ -56,7 +56,7 @@
   }
 
   a {
-    @apply mt-2 text-base text-blue-500 dark:text-gray-300;
+    @apply text-base text-blue-500 dark:text-gray-300;
   }
 
   section {
@@ -111,41 +111,44 @@
     @apply text-[var(--primary)];
   }
 
+  /* Mobile menu styles */
+  .mobile-menu-btn {
+    @apply hidden bg-transparent border-none text-2xl cursor-pointer text-[var(--dark)];
+  }
+
+
   /* Dark mode toggle styles */
   .dark-mode-toggle {
     @apply fixed bottom-8 right-8 z-[100] bg-[var(--dark)] text-[var(--light)] border-none w-[3.125rem] h-[3.125rem] rounded-full cursor-pointer shadow-md flex items-center justify-center text-2xl;
   }
+
+  /* Dark Mode Styles */
+  body.dark-mode {
+    @apply text-[var(--light)] bg-[var(--dark)];
+  }
+
+  body.dark-mode .card {
+    @apply bg-gray-800 border-gray-700;
+  }
+
+  body.dark-mode nav {
+    @apply bg-gray-900/90;
+  }
+
+  body.dark-mode .dark-mode-toggle {
+    @apply bg-[var(--light)] text-[var(--dark)];
+  }
+
+  body.dark-mode .nav-link {
+    @apply text-[var(--light)];
+  }
+
+  body.dark-mode .mobile-menu-btn {
+    @apply text-[var(--light)];
+  }
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  @apply text-[var(--light)] bg-[var(--dark)];
-}
 
-body.dark-mode .card {
-  @apply bg-gray-800 border-gray-700;
-}
-
-body.dark-mode nav {
-  @apply bg-gray-900/90;
-}
-
-body.dark-mode .dark-mode-toggle {
-  @apply bg-[var(--light)] text-[var(--dark)];
-}
-
-body.dark-mode .nav-link {
-  @apply text-[var(--light)];
-}
-
-/* Mobile menu styles */
-.mobile-menu-btn {
-  @apply hidden bg-transparent border-none text-2xl cursor-pointer text-[var(--dark)];
-}
-
-body.dark-mode .mobile-menu-btn {
-  @apply text-[var(--light)];
-}
 
 @media (max-width: 768px) {
   .mobile-menu-btn {
