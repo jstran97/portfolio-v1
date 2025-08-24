@@ -20,8 +20,7 @@ export default function ProjectSection ({ darkMode, projects }) {
                 }}>
                 {
                     projects.map(project => (
-                        <div key={project.id} className="project-card" style={{
-                                backgroundColor: 'var(--card-bg)',
+                        <div key={project.id} className="project-card bg-[var(--card-bg)] dark:bg-[var(--card-bg-dark)]" style={{
                                 borderRadius: '10px',
                                 overflow: 'hidden',
                                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
@@ -49,7 +48,7 @@ export default function ProjectSection ({ darkMode, projects }) {
                         >
                             {project.title}
                         </h3>
-                        <p style={{ color: 'var(--gray)', marginBottom: '1rem' }}>
+                        <p style={{ marginBottom: '1rem' }}>
                             {project.description}
                         </p>
                         <div style={{

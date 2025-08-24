@@ -33,7 +33,7 @@ export default function SkillSection({ darkMode }) {
                 }}>
                 {
                     skillsWithComponents.map((skill, index) => (
-                        <div key={index} className="skill-item bg-blue-200" style={{
+                        <div key={index} className="skill-item bg-[var(--card-bg)] dark:bg-[var(--card-bg-dark)]" style={{
                             // backgroundColor: 'var(--card-bg)',
                             borderRadius: '10px',
                             padding: '2rem 1rem',
@@ -50,7 +50,7 @@ export default function SkillSection({ darkMode }) {
                         }}>
                             <div className="flex flex-col items-center justify-center">
                                 <skill.icon className={`text-2xl my-5 ${skill.color}`} size={50}/>
-                                <span className="font-medium">{skill.name}</span>
+                                <span className="font-medium text-black dark:text-[var(--light)]">{skill.name}</span>
                             </div>
                         </div>
                     ))

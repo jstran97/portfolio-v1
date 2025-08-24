@@ -167,7 +167,8 @@ export default function Home() {
   // }, []);
 
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-900 text-white font-sans">
+    <main className="min-h-screen bg-white dark:bg-[var(--dark)] font-sans">
+    {/* // <main className="min-h-screen font-sans"> */}
       {/* <main className="min-h-screen bg-white dark:bg-gray-900 text-white font-sans"></main> */}
       {/* className="min-h-screen bg-white dark:bg-gray-900 text-white font-sans" */}
       {/* <header className="fixed top-0 left-0 w-full bg-gray-950 bg-opacity-90 z-50 shadow-md">
@@ -202,8 +203,11 @@ export default function Home() {
           I'm a passionate developer who loves crafting interactive web experiences using modern technologies. With a background in design and development, I enjoy bringing ideas to life through code and creativity.
         </p>
       </section> */}
-      <AboutSection
+      {/* <AboutSection
         className="dark:bg-gray-900"
+        darkMode={darkMode}
+      /> */}
+      <AboutSection
         darkMode={darkMode}
       />
 

@@ -11,14 +11,62 @@
   --foreground: #171717;
 } */
 
-:root {
+/* :root {
   --primary: #2563eb;
   --primary-light: #3b82f6;
-  --dark: #111827;
+  --dark: #1f2937;
   --light: #f9fafb;
   --gray: #6b7280;
   --card-bg: #ffffff;
+  --card-bg-dark: #1f2937;
   --border: #e5e7eb;
+} */
+
+:root {
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --dark: #17131c;
+  --light: #f9fafb;
+  /* --gray: #6b7280; */
+  --card-bg: #ffffff;
+  --card-bg-dark: #2c2831;
+  --border: #e5e7eb;
+
+  --card-btn-bg-dark: #5b585f;
+
+  /** Base colors */
+  --clr-dark-a0: #000000;
+  --clr-light-a0: #ffffff;
+
+  /** Theme primary colors */
+  --clr-primary-a0: #b88cff;
+  --clr-primary-a10: #c199ff;
+  --clr-primary-a20: #c9a5ff;
+  --clr-primary-a30: #d2b2ff;
+  --clr-primary-a40: #dabfff;
+  --clr-primary-a50: #e2cbff;
+
+  /** Theme surface colors */
+  --clr-surface-a0: #000000;
+  --clr-surface-a10: #1e1e1e;
+  --clr-surface-a20: #353535;
+  --clr-surface-a30: #4e4e4e;
+  --clr-surface-a40: #696969;
+  --clr-surface-a50: #858585;
+
+  /** Theme tonal surface colors */
+  --clr-surface-tonal-a0: #17131c;
+  --clr-surface-tonal-a10: #2c2831;
+  --clr-surface-tonal-a20: #433f47;
+  --clr-surface-tonal-a30: #5b585f; /* Dark mode - card button */
+  --clr-surface-tonal-a40: #747177;
+  --clr-surface-tonal-a50: #8e8c91;
+
+  /** Examples */
+  .bg-primary {
+    color: var(--clr-primary-a50);
+    background-color: var(--clr-surface-a0);
+  }
 }
 
 @theme inline {
@@ -51,8 +99,12 @@
     @apply mt-2 text-sm text-black dark:text-white;
   }
 
+  /* p {
+    @apply mt-2 text-sm;
+  } */
+
   button {
-    @apply px-4 py-2 text-sm font-medium mt-8 text-blue-900 bg-purple-300 rounded-md;
+    @apply text-sm font-medium text-blue-900 bg-purple-300 rounded-md;
   }
 
   a {
@@ -66,7 +118,7 @@
 
 @layer components {
   .card {
-    @apply m-10 rounded-lg bg-blue-300 px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black;
+    @apply m-10 rounded-lg px-6 py-8 shadow-xl ring-1 ring-slate-900/5;
   }
 
   /* .container {
@@ -88,6 +140,10 @@
 
   .btn {
     @apply inline-block px-6 py-3 rounded-md font-medium text-center transition-all duration-300 cursor-pointer;
+  }
+
+  .btn-navbar {
+    @apply text-[var(--gray)] dark:text-[var(--light)] font-medium hover:text-[var(--primary)] transition-colors;
   }
 
   .btn-primary {
@@ -146,6 +202,14 @@
   body.dark-mode .mobile-menu-btn {
     @apply text-[var(--light)];
   }
+
+  input {
+    @apply w-full p-3 rounded-md border border-[var(--border)];
+  }
+
+  textarea {
+    @apply w-[100%] p-[0.75rem] rounded-[0.375rem] border border-[var(--border)] resize-y;
+  }
 }
 
 
@@ -168,7 +232,7 @@
   }
 
   .nav-link {
-    @apply my-4 mx-0;
+    @apply my-2 mx-0;
   }
 }
 
