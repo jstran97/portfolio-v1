@@ -39,7 +39,7 @@ export default function SkillSection({ darkMode }) {
                             padding: '2rem 1rem',
                             textAlign: 'center',
                             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                            border: '1px solid var(--border)',
+                            // border: '1px solid var(--border)',
                             transition: 'transform 0.3s ease'
                             }}
                             onMouseEnter={(e) => {

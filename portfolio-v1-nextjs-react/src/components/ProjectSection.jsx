@@ -25,8 +25,8 @@ export default function ProjectSection ({ darkMode, projects }) {
                                 overflow: 'hidden',
                                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
                                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                                cursor: 'pointer',
-                                border: '1px solid var(--border)'
+                                cursor: 'pointer'
+                                // border: '1px solid var(--border)'
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = 'translateY(-10px)';

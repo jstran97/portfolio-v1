@@ -52,7 +52,8 @@ export default function ContactSection({ darkMode }) {
                     </div>
                     {/* dark:bg-[var(--card-bg-dark)] */}
                     <div>
-                        <form className="bg-[var(--card-bg)] dark:bg-[var(--card-bg-dark)] p-8 rounded-[0.625rem] shadow-lg border border-[var(--border)]">
+                        <form className="bg-[var(--card-bg)] dark:bg-[var(--card-bg-dark)] p-8 rounded-[0.625rem] shadow-lg">
+                        {/* border border-[var(--border)] */}
                             <div className="mb-6">
                                 <label htmlFor="name" className="block mb-2 font-medium">
                                     <p>Name</p>
