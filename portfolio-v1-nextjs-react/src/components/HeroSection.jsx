@@ -17,7 +17,6 @@ export default function HeroSection({ darkMode }) {
                 <h1 style={{
                   fontSize: '3.5rem',
                   fontWeight: 800,
-                  marginBottom: '1.5rem',
                   color: 'black'
                 }}>
                   Hi, I'm <span className="text-primary">Justin Tran</span>

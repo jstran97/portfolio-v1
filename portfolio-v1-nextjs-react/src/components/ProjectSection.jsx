@@ -2,14 +2,6 @@ import { LuArrowRight } from "react-icons/lu";
 
 export default function ProjectSection ({ darkMode, projects }) {
     return (
-        // <section id="projects" className="projects flex justify-center py-24 px-4 md:px-20"
-        //     //     style={{
-        //     //     backgroundColor: darkMode ? '#1a202c' : '#f3f4f6',
-        //     //     // backgroundColor: 'white'
-        //     //     display: 'flex',
-        //     //     justifyContent: 'center'
-        //     // }}
-        // >
         <section id="projects" className="projects">
             <div className="container">
                 <h2 className="section-title">My Projects</h2>
@@ -26,7 +18,6 @@ export default function ProjectSection ({ darkMode, projects }) {
                                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
                                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                                 cursor: 'pointer'
-                                // border: '1px solid var(--border)'
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = 'translateY(-10px)';
@@ -83,7 +74,6 @@ export default function ProjectSection ({ darkMode, projects }) {
                             }}>
                                 View Project
                                 <i style={{ marginLeft: '0.5rem' }}></i>
-                                {/* <i className="fas fa-arrow-right" style={{ marginLeft: '0.5rem' }}></i> */}
                                 {console.log(LuArrowRight)}
                                 {console.log(<LuArrowRight/>)}
                                 <LuArrowRight />
@@ -92,29 +82,6 @@ export default function ProjectSection ({ darkMode, projects }) {
                         </div>
                     ))
                 }
-                </div>
-
-                {/* Add Project Button */}
-                <div style={{
-                    textAlign: 'center',
-                    marginTop: '1rem'
-                    }}>
-                <button
-                    className="btn btn-primary"
-                    onClick={() => {
-                    const newProject = {
-                        id: projects.length + 1,
-                        title: "New Project",
-                        description: "Click to edit this project description.",
-                        image: "/api/placeholder/600/400",
-                        tags: ["New", "Project"],
-                        link: "#"
-                    };
-                    setProjects([...projects, newProject]);
-                    }}
-                >
-                    <i className="fas fa-plus" style={{ marginRight: '0.5rem' }}></i>Add Project
-                </button>
                 </div>
             </div>
         </section>

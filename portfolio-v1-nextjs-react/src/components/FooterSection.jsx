@@ -2,9 +2,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function FooterSection({ darkMode }) {
     return (
-            // backgroundColor: darkMode ? '#111827' : '#1f2937',
         <footer className="bg-[#151c2c] dark:bg-[var(--card-bg-dark)]" style={{
-            // backgroundColor: darkMode ? '#111827' : '#1f2937',
             color: 'white',
             padding: '2rem 0',
             textAlign: 'center'
@@ -26,7 +24,6 @@ export default function FooterSection({ darkMode }) {
                         borderRadius: '50%',
                         color: 'white'
                         }}>
-                        {/* <i className="fab fa-linkedin-in"></i> */}
                         <FaLinkedinIn size={16}/>
                     </a>
                     <a href="#" className="dark:bg-[var(--clr-surface-tonal-a30)] "style={{
@@ -38,7 +35,6 @@ export default function FooterSection({ darkMode }) {
                         borderRadius: '50%',
                         color: 'white'
                         }}>
-                        {/* <i className="fas fa-github"></i> */}
                         <FaGithub size={16}/>
                     </a>
                 </div>
