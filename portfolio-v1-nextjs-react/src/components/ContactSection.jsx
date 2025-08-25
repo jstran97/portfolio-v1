@@ -56,13 +56,11 @@ export default function ContactSection({ darkMode }) {
                                 <label htmlFor="name" className="block mb-2 font-medium">
                                     <p>Name</p>
                                 </label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    placeholder="Your Name" 
-                                    className={`${
-                                        darkMode ? 'bg-gray-700' : 'bg-white'
-                                    }`}
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Your Name"
+                                    className="contact-reg-input-box"
                                 />
                             </div>
 
@@ -70,13 +68,11 @@ export default function ContactSection({ darkMode }) {
                                 <label htmlFor="email" className="block mb-2 font-medium">
                                     <p>Email</p>
                                 </label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    placeholder="Your Email" 
-                                    className={`${
-                                        darkMode ? 'bg-gray-700' : 'bg-white'
-                                    }`}
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Your Email"
+                                    className="contact-reg-input-box"
                                 />
                             </div>
 
@@ -84,13 +80,11 @@ export default function ContactSection({ darkMode }) {
                                 <label htmlFor="subject" className="block mb-2 font-medium">
                                     <p>Subject</p>
                                 </label>
-                                <input 
-                                    type="text" 
-                                    id="subject" 
-                                    placeholder="Subject" 
-                                    className={` ${
-                                        darkMode ? 'bg-gray-700' : 'bg-white'
-                                    }`}
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    placeholder="Subject"
+                                    className="contact-reg-input-box"
                                 />
                             </div>
 
@@ -98,14 +92,12 @@ export default function ContactSection({ darkMode }) {
                                 <label htmlFor="message" className="block mb-2 font-medium">
                                     <p>Message</p>
                                 </label>
-                                <textarea 
-                                    id="message" 
-                                    rows="5" 
-                                    placeholder="Your Message" 
-                                    className={`${
-                                        darkMode ? 'bg-gray-700' : 'bg-white'
-                                    }`}
-                                ></textarea> 
+                                <textarea
+                                    id="message"
+                                    rows="5"
+                                    placeholder="Your Message"
+                                    className="contact-msg-box"
+                                ></textarea>
                             </div>
 
                             <button className="btn btn-primary w-full flex items-center justify-center gap-2">
