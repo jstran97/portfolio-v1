@@ -26,16 +26,19 @@ export default function AboutSection({ darkMode }) {
                 </div>
                 <div className="about-content">
                     <h3 style={{ fontSize: '1.75rem', marginBottom: '1.5rem' }}>
-                    A passionate developer based in <span className="text-primary">Your Location</span>
+                    A passionate developer based in <span className="text-primary">Los Angeles, USA</span>
                     </h3>
+                    {/* <p style={{ marginBottom: '1.5rem' }}>
+                    I'm a full stack developer committed to creating intuitive, dynamic user experiences. With expertise in modern web technologies, I build responsive web applications that solve real-world problems.
+                    </p> */}
                     <p style={{ marginBottom: '1.5rem' }}>
-                    I'm a full stack developer with a passion for creating intuitive, dynamic user experiences.
-                    With expertise in modern web technologies, I build responsive web applications that solve real-world problems.
+                    Over the past 5 years, I’ve worked in various aspects of aerospace industry, including test lead, manufacturing inspection, and software development. I’m grateful to have had the opportunity to wear many hats.
                     </p>
-                    <p style={{ marginBottom: '1.5rem' }}>
-                    My journey in web development started 5 years ago, and I've been in love with creating for the web ever since.
-                    I enjoy the constant learning and challenges that come with staying on top of this ever-evolving field.
+                    <p style={{ marginBottom: '1.5rem'}}>
+                    Given my interest in programming back in high school, I've decided to pursue programming again and dive deeper into more recent and popular programming languages and frameworks. During my time at Boeing, I developed and deployed an autonomous data processing feature in C#, which eliminated manual data checks and achieved 51% efficiency. This tool also removed the chances of having human-related errors resulting from manual data reviews.
                     </p>
+                    <p style={{ marginBottom: '1.5rem' }}>I’m currently focused on developing web applications to further solidify my foundation in full-stack development and engineering principles for performance and useability.
+                    I enjoy the constant learning and challenges that come with staying on top of this ever-evolving field.</p>
                     <div style={{
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -44,15 +47,15 @@ export default function AboutSection({ darkMode }) {
                     }}>
                     <div style={{ marginRight: '2rem' }}>
                         <h4 style={{ fontSize: '1.2rem', fontWeight: 600 }}>Name</h4>
-                        <p>Your Name</p>
+                        <p>Justin Tran</p>
                     </div>
                     <div style={{ marginRight: '2rem' }}>
                         <h4 style={{ fontSize: '1.2rem', fontWeight: 600 }}>Email</h4>
-                        <p>your.email@example.com</p>
+                        <p>justin.s.tran97@gmail.com</p>
                     </div>
                     <div>
                         <h4 style={{ fontSize: '1.2rem', fontWeight: 600 }}>Location</h4>
-                        <p>Your City, Country</p>
+                        <p>Los Angeles, USA</p>
                     </div>
                     </div>
                     <div style={{
@@ -68,7 +71,7 @@ export default function AboutSection({ darkMode }) {
                             alignItems: 'center',
                             justifyContent: 'center'
                         }}>
-                        Download CV
+                        Download Résumé
                         <i style={{ marginLeft: '0.5rem' }}></i>
                         <IoMdDownload />
                     </a>

@@ -32,34 +32,34 @@ export default function Home() {
   const [projects, setProjects] = React.useState([
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A modern e-commerce platform built with Next.js and Tailwind CSS.",
+      title: "Facial Recognition Web Application",
+      description: "A web app for detecting people's faces in the submitted photo. Each photo submission increases the user's entry count, which is stored in the database.",
       image: "/api/placeholder/600/400",
-      tags: ["Next.js", "React", "Tailwind CSS", "MongoDB"],
+      tags: ["HTML", "CSS", "JavaScript", "React.js", "Express.js", "REST API", "Postman", "Machine Learning API (Clarifai)", "MacOS", "Render"],
       link: "#"
     },
     {
       id: 2,
-      title: "Portfolio Website",
-      description: "A personal portfolio website showcasing my projects and skills.",
+      title: "RoboFriends Web Application",
+      description: "A web app displaying a list of different robot profiles. Search function allows user to locate the desired robot profile(s). Profile pictures are from [robohash.org](https://robohash.org/), and the profile objects are from [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com/users).",
       image: "/api/placeholder/600/400",
-      tags: ["React", "GSAP", "CSS3", "Responsive Design"],
+      tags: ["HTML", "CSS", "JavaScript", "React.js", "Render"],
       link: "#"
     },
     {
       id: 3,
-      title: "Task Management App",
-      description: "A task management application with drag-and-drop functionality.",
+      title: "Password Checker",
+      description: "Script utilizing data from Password API URL to determine if user-inputted password(s) are previously hacked. Checks and generates output based on how many times user password(s) were part of data breaches.",
       image: "/api/placeholder/600/400",
-      tags: ["React", "Redux", "Node.js", "Express"],
+      tags: ["Python", "Password API", "SHA1 Hash Algorithm"],
       link: "#"
     },
     {
       id: 4,
-      title: "Weather Dashboard",
-      description: "A weather dashboard showing real-time weather data from around the world.",
+      title: "Senior Design: Smart Hydroponics System",
+      description: "Smart hydroponics system where plants can grow without soil using nutrient-enriched water and with the help of electric motors, Internet of Things (IoT) Connectivity, and a mobile application.",
       image: "/api/placeholder/600/400",
-      tags: ["JavaScript", "API Integration", "CSS Grid", "Chart.js"],
+      tags: ["Arduino", "Google Firebase", "Internet of Things (IoT) Connectivity", "C"],
       link: "#"
     }
   ]);
@@ -253,11 +253,11 @@ export default function Home() {
       <FooterSection
         darkMode={darkMode}
       />
-
+{/* 
       <DarkModeToggleButton
         toggleDarkMode={toggleDarkMode}
         darkMode={darkMode}
-      />
+      /> */}
 
       {/* <section id="contact" className="fade-in py-24 px-4 md:px-20 bg-gray-800">
         <h2 className="text-4xl font-semibold mb-8">Contact</h2>

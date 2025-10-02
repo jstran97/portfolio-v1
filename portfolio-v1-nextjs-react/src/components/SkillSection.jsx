@@ -7,15 +7,17 @@ import {
 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
+import { PiFileCSharp } from "react-icons/pi";
 
 const skillsWithComponents = [
+    { name: "Python", icon: FaPython, color: "text-[#3776AB]" },
+    { name: "C#", icon: PiFileCSharp, color: "text-[#6410db]" },
+    { name: "Git", icon: FaGitAlt, color: "text-[#F05032]" },
     { name: "HTML5", icon: FaHtml5, color: "text-[#E34F26]" },
     { name: "CSS3", icon: FaCss3Alt, color: "text-[#1572B6]" },
     { name: "JavaScript", icon: IoLogoJavascript, color: "text-[#F7DF1E]" },
     { name: "React", icon: FaReact, color: "text-[#61DAFB]" },
-    { name: "Node.js", icon: FaNodeJs, color: "text-[#339933]" },
-    { name: "Python", icon: FaPython, color: "text-[#3776AB]" },
-    { name: "Git", icon: FaGitAlt, color: "text-[#F05032]" }
+    { name: "Node.js", icon: FaNodeJs, color: "text-[#339933]" }
 ];
 
 export default function SkillSection({ darkMode }) {
@@ -23,7 +25,7 @@ export default function SkillSection({ darkMode }) {
     return(
         <section id="skills" className="skills">
             <div className="container">
-                <h2 className="section-title">My Skills</h2>
+                <h2 className="section-title">Skills recently used</h2>
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',

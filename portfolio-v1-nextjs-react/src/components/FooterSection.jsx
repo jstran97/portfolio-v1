@@ -8,7 +8,10 @@ export default function FooterSection({ darkMode }) {
             textAlign: 'center'
           }}>
             <div className="container">
-                <p className="text-[var(--light)] dark:text-[var(--light)]">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+                <p className="text-[var(--light)] dark:text-[var(--light)]">© {new Date().getFullYear()} | Coded by yours truly.</p>
+                <p className="text-[var(--light)] dark:text-[var(--light)]">
+                    Built with React, Next.js and Tailwind CSS. Deployed with Vercel.
+                </p>
                 <div style={{
                     display: 'flex',
                     justifyContent: 'center',

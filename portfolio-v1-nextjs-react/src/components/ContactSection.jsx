@@ -7,11 +7,11 @@ export default function ContactSection({ darkMode }) {
     return(
         <section id="contact" className="contact">
             <div className="container">
-                <h2 className="section-title">Get In Touch</h2>
+                <h2 className="section-title">Get in touch</h2>
                 <div className="contact-content grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h3 className="text-3xl mb-6">
-                            Let's Work Together
+                            Let's work together
                         </h3>
                         <p className="mb-8">
                             I'm currently available for freelance work and full-time positions.
@@ -39,7 +39,7 @@ export default function ContactSection({ darkMode }) {
                                 </div>
                             </div>
 
-                            <div className="flex items-center">
+                            {/* <div className="flex items-center">
                                 <div className="w-10 h-10 bg-[var(--primary)] rounded-full flex items-center justify-center text-white mr-4">
                                     <FaPhone size={16}/>
                                 </div>
@@ -47,7 +47,7 @@ export default function ContactSection({ darkMode }) {
                                     <h4 className="font-semibold">Phone</h4>
                                     <p>+1 (123) 456-7890</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div>
