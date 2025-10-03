@@ -41,7 +41,17 @@ export default function Home() {
     {
       id: 2,
       title: "RoboFriends Web Application",
-      description: "A web app displaying a list of different robot profiles. Search function allows user to locate the desired robot profile(s). Profile pictures are from [robohash.org](https://robohash.org/), and the profile objects are from [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com/users).",
+      description: (
+        <>
+          A web app displaying a list of different robot profiles. Search function allows user to locate the desired robot profile(s). Profile pictures are from
+          <a href="https://robohash.org/" target="_blank" rel="noopener noreferrer" className="hyperlink">
+            {' '}robohash.org
+          </a>, and the profile objects are from
+          <a href="https://jsonplaceholder.typicode.com/users/" target="_blank" rel="noopener noreferrer" className="hyperlink">
+            {' '}jsonplaceholder.typicode.com
+          </a>.
+        </>
+      ),
       image: "/api/placeholder/600/400",
       tags: ["HTML", "CSS", "JavaScript", "React.js", "Render"],
       link: "#"

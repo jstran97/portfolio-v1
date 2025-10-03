@@ -44,10 +44,11 @@ export default function ProjectSection ({ darkMode, projects }) {
                             >
 
                                 {/* Project Title */}
-                                <h3 style={{
+                                <h3 className="text-center" style={{
                                     fontSize: '1.25rem',
                                     fontWeight: 600,
-                                    marginBottom: '0.5rem' }}
+                                    marginBottom: '0.5rem',
+                                }}
                                 >
                                     {project.title}
                                 </h3>
