@@ -1,3 +1,4 @@
+
 import { LuArrowRight } from "react-icons/lu";
 
 export default function ProjectSection ({ darkMode, projects }) {
@@ -28,13 +29,30 @@ export default function ProjectSection ({ darkMode, projects }) {
                                 e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.1)';
                             }}
                         >
-                            {/* Project Image */}
-                            <img src={project.image} alt={project.title} style={{
-                                    width: '100%',
-                                    height: '200px',
-                                    objectFit: 'cover'
-                                }}
-                            />
+                            {/* Project Image or Video */}
+                            <div>
+                                {project.mediaType === "video" ? (
+                                        <video autoPlay loop muted playsInline
+                                            style={{
+                                                width: '100%',
+                                                height: '200px',
+                                                objectFit: 'contain' // Shows full video with letterboxing
+                                            }}
+                                        >
+                                            <source src={project.image} type="video/mp4" />
+                                        </video>
+                                    ) :
+                                    (
+                                        <img src={project.image} alt={project.title} style={{
+                                            width: '100%',
+                                            height: '200px',
+                                            objectFit: 'cover'
+                                            }}
+                                        />
+                                    )
+                                }
+                            </div>
+
                             <div style={{
                                 padding: '1.5rem',
                                 display: 'flex',

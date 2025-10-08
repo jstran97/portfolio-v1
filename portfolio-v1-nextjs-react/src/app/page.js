@@ -34,7 +34,8 @@ export default function Home() {
       id: 1,
       title: "Facial Recognition Web Application",
       description: "A web app for detecting people's faces in the submitted photo. Each photo submission increases the user's entry count, which is stored in the database.",
-      image: "/api/placeholder/600/400",
+      image: "/videos/FacialRecognitionWebApp_Demo.mp4",
+      mediaType: "video",
       tags: ["HTML", "CSS", "JavaScript", "React.js", "Express.js", "REST API", "Postman", "Machine Learning API (Clarifai)", "MacOS", "Render"],
       link: "#"
     },
@@ -52,7 +53,8 @@ export default function Home() {
           </a>.
         </>
       ),
-      image: "/api/placeholder/600/400",
+      image: "/videos/RoboFriendsHooks_Demo.mp4",
+      mediaType: "video",
       tags: ["HTML", "CSS", "JavaScript", "React.js", "Render"],
       link: "#"
     },
@@ -60,15 +62,17 @@ export default function Home() {
       id: 3,
       title: "Password Checker",
       description: "Script utilizing data from Password API URL to determine if user-inputted password(s) are previously hacked. Checks and generates output based on how many times user password(s) were part of data breaches.",
-      image: "/api/placeholder/600/400",
+      image: "videos/PasswordChecker_Demo.mp4",
+      mediaType: "video",
       tags: ["Python", "Password API", "SHA1 Hash Algorithm"],
       link: "#"
     },
     {
       id: 4,
-      title: "Senior Design: Smart Hydroponics System",
-      description: "Smart hydroponics system where plants can grow without soil using nutrient-enriched water and with the help of electric motors, Internet of Things (IoT) Connectivity, and a mobile application.",
-      image: "/api/placeholder/600/400",
+      title: "Senior Design: Smart Hydroponic System",
+      description: "Smart hydroponic system where plants can grow without soil using nutrient-enriched water and with the help of electric motors, Internet of Things (IoT) Connectivity, and a mobile application.",
+      image: "/images/SmartHydroponicSystem_Prototype_May2020.png",
+      mediaType: "image",
       tags: ["Arduino", "Google Firebase", "Internet of Things (IoT) Connectivity", "C"],
       link: "#"
     }
