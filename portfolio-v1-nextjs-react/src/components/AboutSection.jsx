@@ -65,15 +65,17 @@ export default function AboutSection({ darkMode }) {
                         display: 'inline-flex',
                         gap: '1rem',
                     }}>
-                    <a href="#" className="btn btn-primary"
+                    <a
+                        href="/documents/Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary"
                         style={{
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center'
                         }}>
-                        Download Résumé
-                        <i style={{ marginLeft: '0.5rem' }}></i>
-                        <IoMdDownload />
+                        Résumé
                     </a>
                     <a href="#" style={{
                         display: 'flex',
