@@ -59,7 +59,7 @@ export default function Home() {
       link: "#"
     },
     {
-      id: 3,
+      id: 3, 
       title: "Password Checker",
       description: "Script utilizing data from Password API URL to determine if user-inputted password(s) are previously hacked. Checks and generates output based on how many times user password(s) were part of data breaches.",
       image: "videos/PasswordChecker_Demo.mp4",
@@ -160,7 +160,11 @@ export default function Home() {
     setMenuOpen(!menuOpen);
   };
 
-
+  const handleEmail = () => {
+    const subject = encodeURIComponent("Contact from Portfolio Website");
+    const body = encodeURIComponent("Hi Justin, I saw your portfolio and...");
+    window.location.href = `mailto:justin.s.tran97@gmail.com?subject=${subject}&body=${body}`;
+  };
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -261,13 +265,13 @@ export default function Home() {
       />
 
       <ContactSection
-        darkMode={darkMode}
+        handleEmail={handleEmail}
       />
 
       <FooterSection
         darkMode={darkMode}
       />
-{/* 
+{/*
       <DarkModeToggleButton
         toggleDarkMode={toggleDarkMode}
         darkMode={darkMode}
