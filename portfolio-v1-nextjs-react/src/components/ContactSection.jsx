@@ -9,7 +9,7 @@ export default function ContactSection({ handleEmail }) {
             <div className="container">
                 <h2 className="section-title">Get in touch</h2>
                     <div>
-                        <h3 className="text-center text-2xl mb-6">
+                        <h3 className="text-center text-xl mb-6">
                             Let's work together
                         </h3>
                         <p className="text-center mb-8">

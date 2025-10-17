@@ -37,7 +37,7 @@ export default function Home() {
       image: "/videos/FacialRecognitionWebApp_Demo.mp4",
       mediaType: "video",
       tags: ["HTML", "CSS", "JavaScript", "React.js", "Express.js", "REST API", "Postman", "Machine Learning API (Clarifai)", "MacOS", "Render"],
-      link: "#"
+      link: "https://github.com/jstran97/ztm-smartbrain"
     },
     {
       id: 2,
@@ -56,16 +56,16 @@ export default function Home() {
       image: "/videos/RoboFriendsHooks_Demo.mp4",
       mediaType: "video",
       tags: ["HTML", "CSS", "JavaScript", "React.js", "Render"],
-      link: "#"
+      link: "https://github.com/jstran97/ztm-robofriends-hooks"
     },
     {
-      id: 3, 
+      id: 3,
       title: "Password Checker",
       description: "Script utilizing data from Password API URL to determine if user-inputted password(s) are previously hacked. Checks and generates output based on how many times user password(s) were part of data breaches.",
       image: "videos/PasswordChecker_Demo.mp4",
       mediaType: "video",
       tags: ["Python", "Password API", "SHA1 Hash Algorithm"],
-      link: "#"
+      link: "https://github.com/jstran97/password-checker"
     },
     {
       id: 4,
@@ -74,7 +74,7 @@ export default function Home() {
       image: "/images/SmartHydroponicSystem_Prototype_May2020.png",
       mediaType: "image",
       tags: ["Arduino", "Google Firebase", "Internet of Things (IoT) Connectivity", "C"],
-      link: "#"
+      link: "https://github.com/jstran97/Smart_Underwater_Hydroponics_System"
     }
   ]);
 

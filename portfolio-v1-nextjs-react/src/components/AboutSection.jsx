@@ -77,7 +77,7 @@ export default function AboutSection({ darkMode }) {
                         }}>
                         Résumé
                     </a>
-                    <a href="#" style={{
+                    <a href="https://www.linkedin.com/in/justin-tran-957552178/" target="_blank" rel="noopener noreferrer" style={{
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -89,7 +89,7 @@ export default function AboutSection({ darkMode }) {
                         }}>
                         <FaLinkedinIn size={16}/>
                     </a>
-                    <a href="#" style={{
+                    <a href="https://github.com/jstran97" target="_blank" rel="noopener noreferrer" style={{
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',

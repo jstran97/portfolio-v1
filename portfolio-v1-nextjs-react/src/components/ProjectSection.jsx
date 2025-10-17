@@ -8,7 +8,7 @@ export default function ProjectSection ({ darkMode, projects }) {
                 <h2 className="section-title">My Projects</h2>
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
                     gap: '2rem'
                 }}>
                 {
@@ -35,7 +35,7 @@ export default function ProjectSection ({ darkMode, projects }) {
                                         <video autoPlay loop muted playsInline
                                             style={{
                                                 width: '100%',
-                                                height: '200px',
+                                                height: '400px',
                                                 objectFit: 'contain' // Shows full video with letterboxing
                                             }}
                                         >
@@ -45,7 +45,7 @@ export default function ProjectSection ({ darkMode, projects }) {
                                     (
                                         <img src={project.image} alt={project.title} style={{
                                             width: '100%',
-                                            height: '200px',
+                                            height: '400px',
                                             objectFit: 'cover'
                                             }}
                                         />
@@ -102,7 +102,9 @@ export default function ProjectSection ({ darkMode, projects }) {
                                     }
                                 </div>
 
-                                <a href={project.link} className="btn btn-outline" style={{
+                                <a href={project.link} className="btn btn-outline"
+                                target="_blank" rel="noopener noreferrer"
+                                style={{
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
