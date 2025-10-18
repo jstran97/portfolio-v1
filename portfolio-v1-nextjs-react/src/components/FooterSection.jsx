@@ -12,41 +12,7 @@ export default function FooterSection({ darkMode }) {
                 <p className="text-[var(--light)] dark:text-[var(--light)]">
                     Built with React, Next.js and Tailwind CSS. Deployed with Vercel.
                 </p>
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    gap: '1rem',
-                    marginTop: '1rem'
-                }}>
-                    <a href="#" className="dark:bg-[var(--clr-surface-tonal-a30)]" style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: '30px',
-                        height: '30px',
-                        borderRadius: '50%',
-                        color: 'white'
-                        }}>
-                        <FaLinkedinIn size={16}/>
-                    </a>
-                    <a href="#" className="dark:bg-[var(--clr-surface-tonal-a30)] "style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: '30px',
-                        height: '30px',
-                        borderRadius: '50%',
-                        color: 'white'
-                        }}>
-                        <FaGithub size={16}/>
-                    </a>
-                </div>
             </div>
         </footer>
     );
 }
-
-// DARK MODE TOGGLE LOGIC:
-// export default function FooterSection({ darkMode }) {return (); }
-// backgroundColor: darkMode ? '#111827' : '#1f2937'
-// <p style={{color: darkMode ? '#1f2937' : 'white'}}>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
