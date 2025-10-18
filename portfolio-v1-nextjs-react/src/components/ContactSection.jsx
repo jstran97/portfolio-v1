@@ -5,7 +5,7 @@ import { IoMdPaperPlane } from "react-icons/io";
 
 export default function ContactSection({ handleEmail }) {
     return(
-        <section id="contact" className="contact">
+        <section id="contact" className="contact flex items-center">
             <div className="container">
                 <h2 className="section-title">Get in touch</h2>
                     <div>

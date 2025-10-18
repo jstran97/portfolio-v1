@@ -240,7 +240,7 @@
   }
 
   .nav-links {
-    @apply fixed top-20 left-0 w-full flex-col bg-[var(--light)] p-8 -translate-y-[150%] transition-transform duration-300 z-[90];
+    @apply fixed top-10 left-0 w-full flex-col bg-[var(--light)] p-8 -translate-y-[150%] transition-transform duration-300 z-[90];
   }
 
   body.dark-mode .nav-links {

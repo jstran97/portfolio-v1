@@ -8,32 +8,41 @@ export default function HeroSection({ darkMode }) {
             position: 'relative',
             overflow: 'hidden'
           }}>
-            <div className="container hero-content" style={{
+            <div className="container" style={{
               display: 'flex',
-              alignItems: 'center',
               justifyContent: 'center'
             }}>
-              <div style={{maxWidth: '600px' }}>
-                <h1 style={{
+              <div>
+                <p className="whitespace" style={{
+                  fontSize: '1.25rem',
+                  color: 'var(--gray)',
+                  textAlign: 'center'
+                }}>
+                  Hi, my name is
+                </p>
+                <h1 className="text-primary" style={{
                   fontSize: '3.5rem',
                   fontWeight: 800,
-                  color: 'black'
+                  marginBottom: '1rem',
+                  textAlign: 'center'
                 }}>
-                  Hi, I'm <span className="text-primary">Justin Tran</span>
+                  Justin Tran
                 </h1>
-                <p className="whitespace-nowrap" style={{
+                <p className="whitespace" style={{
                   fontSize: '1.25rem',
                   marginBottom: '2rem',
-                  color: 'var(--gray)'
+                  color: 'var(--gray)',
+                  textAlign: 'center'
                 }}>
                   Full Stack Developer crafting beautiful and functional web experiences
                 </p>
-                <div style={{ display: 'flex', gap: '1rem' }}>
+                <div style={{ display: 'flex', flexDirection: 'col', justifyContent: 'center', gap: '1rem' }}>
                   <a href="#projects" className="btn btn-primary">View My Work</a>
                   <a href="#contact" className="btn btn-outline">Contact Me</a>
                 </div>
               </div>
             </div>
+            {/* Circles for background */}
             <div style={{
               position: 'absolute',
               bottom: '-50px',

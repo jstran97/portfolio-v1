@@ -8,8 +8,8 @@ export default function AboutSection({ darkMode }) {
                 <h2 className="section-title">About Me</h2>
                 <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: '3rem',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                gap: '2rem',
                 alignItems: 'center',
                 translate: 'none',
                 rotate: 'none',

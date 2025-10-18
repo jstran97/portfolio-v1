@@ -8,7 +8,7 @@ export default function ProjectSection ({ darkMode, projects }) {
                 <h2 className="section-title">My Projects</h2>
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
                     gap: '2rem'
                 }}>
                 {
@@ -30,12 +30,20 @@ export default function ProjectSection ({ darkMode, projects }) {
                             }}
                         >
                             {/* Project Image or Video */}
-                            <div>
+                            <div style={{
+                                width: '100%',
+                                paddingTop: '56.25%', // 16:9 aspect ratio (9/16 * 100)
+                                position: 'relative',
+                                backgroundColor: '#f3f4f6'
+                            }}>
                                 {project.mediaType === "video" ? (
                                         <video autoPlay loop muted playsInline
                                             style={{
+                                                position: 'absolute',
+                                                top: 0,
+                                                left: 0,
                                                 width: '100%',
-                                                height: '400px',
+                                                height: '100%',
                                                 objectFit: 'contain' // Shows full video with letterboxing
                                             }}
                                         >
@@ -44,9 +52,12 @@ export default function ProjectSection ({ darkMode, projects }) {
                                     ) :
                                     (
                                         <img src={project.image} alt={project.title} style={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
                                             width: '100%',
-                                            height: '400px',
-                                            objectFit: 'cover'
+                                            height: '100%',
+                                            objectFit: 'contain'
                                             }}
                                         />
                                     )
@@ -113,8 +124,6 @@ export default function ProjectSection ({ darkMode, projects }) {
                                 }}>
                                     View Project
                                     <i style={{ marginLeft: '0.5rem' }}></i>
-                                    {console.log(LuArrowRight)}
-                                    {console.log(<LuArrowRight/>)}
                                     <LuArrowRight />
                                 </a>
 
