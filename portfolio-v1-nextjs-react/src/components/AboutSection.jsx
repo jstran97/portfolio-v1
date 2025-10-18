@@ -18,8 +18,10 @@ export default function AboutSection({ darkMode }) {
                 transform: 'translate(0px)'
                 }} className="grid about-content">
                 <div>
-                    <img src="/api/placeholder/500/500" alt="Your Name" style={{
+                    <img src="/images/photo_of_me.png" alt="Your Name" style={{
                     width: '100%',
+                    maxWidth: '250px',
+                    margin: 'auto',
                     borderRadius: '10px',
                     boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)'
                     }} />
@@ -35,9 +37,9 @@ export default function AboutSection({ darkMode }) {
                     Over the past 5 years, I’ve worked in various aspects of aerospace industry, including test lead, manufacturing inspection, and software development. I’m grateful to have had the opportunity to wear many hats.
                     </p>
                     <p style={{ marginBottom: '1.5rem'}}>
-                    Given my interest in programming back in high school, I've decided to pursue programming again and dive deeper into more recent and popular programming languages and frameworks. During my time at Boeing, I developed and deployed an autonomous data processing feature in C#, which eliminated manual data checks and achieved 51% efficiency. This tool also removed the chances of having human-related errors resulting from manual data reviews.
+                    Given my interest in programming back in high school, I've decided to pursue programming again and dive deeper into more recent and popular programming languages and frameworks.
                     </p>
-                    <p style={{ marginBottom: '1.5rem' }}>I’m currently focused on developing web applications to further solidify my foundation in full-stack development and engineering principles for performance and useability.
+                    <p style={{ marginBottom: '1.5rem' }}>I’m currently focused on developing software applications and scripts to further solidify my programming foundation and engineering principles for performance and usability.
                     I enjoy the constant learning and challenges that come with staying on top of this ever-evolving field.</p>
                     <div style={{
                     display: 'flex',

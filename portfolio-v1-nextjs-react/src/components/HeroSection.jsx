@@ -34,7 +34,7 @@ export default function HeroSection({ darkMode }) {
                   color: 'var(--gray)',
                   textAlign: 'center'
                 }}>
-                  Full Stack Developer crafting beautiful and functional web experiences
+                  Software Engineer crafting beautiful and functional web experiences
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'col', justifyContent: 'center', gap: '1rem' }}>
                   <a href="#projects" className="btn btn-primary">View My Work</a>
