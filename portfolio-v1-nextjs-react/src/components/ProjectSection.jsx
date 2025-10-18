@@ -1,7 +1,7 @@
 
 import { LuArrowRight } from "react-icons/lu";
 
-export default function ProjectSection ({ darkMode, projects }) {
+export default function ProjectSection ({ projects }) {
     return (
         <section id="projects" className="projects">
             <div className="container">

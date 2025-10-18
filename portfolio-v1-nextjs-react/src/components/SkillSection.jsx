@@ -20,7 +20,7 @@ const skillsWithComponents = [
     { name: "Node.js", icon: FaNodeJs, color: "text-[#339933]" }
 ];
 
-export default function SkillSection({ darkMode }) {
+export default function SkillSection() {
 
     return(
         <section id="skills" className="skills">

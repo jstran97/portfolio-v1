@@ -1,7 +1,7 @@
 import { IoMdDownload } from "react-icons/io";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-export default function AboutSection({ darkMode }) {
+export default function AboutSection() {
     return(
         <section id="about" className="about">
             <div className="container">

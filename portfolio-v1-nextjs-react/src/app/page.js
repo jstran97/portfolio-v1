@@ -27,7 +27,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // import Navigation from '../components/navigation/navigation';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = React.useState(false);
   const [menuOpen, setMenuOpen] = React.useState(false);
   const [projects, setProjects] = React.useState([
     {
@@ -143,19 +142,6 @@ export default function Home() {
     setTimeout(initAnimations, 100);
   }, []);
 
-  React.useEffect(() => {
-    // Apply dark mode to body
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -204,9 +190,7 @@ export default function Home() {
         menuOpen={menuOpen}
       />
 
-      <HeroSection
-        darkMode={darkMode}
-      />
+      <HeroSection/>
 
       {/* <section className="h-screen flex items-center justify-center text-center pt-20">
         <div>
@@ -225,9 +209,7 @@ export default function Home() {
         className="dark:bg-gray-900"
         darkMode={darkMode}
       /> */}
-      <AboutSection
-        darkMode={darkMode}
-      />
+      <AboutSection/>
 
 
 
@@ -256,21 +238,16 @@ export default function Home() {
         </div>
       </section> */}
       <ProjectSection
-        darkMode={darkMode}
         projects={projects}
       />
 
-      <SkillSection
-        darkMode={darkMode}
-      />
+      <SkillSection/>
 
       <ContactSection
         handleEmail={handleEmail}
       />
 
-      <FooterSection
-        darkMode={darkMode}
-      />
+      <FooterSection/>
 {/*
       <DarkModeToggleButton
         toggleDarkMode={toggleDarkMode}

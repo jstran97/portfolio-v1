@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-export default function FooterSection({ darkMode }) {
+export default function FooterSection() {
     return (
         <footer className="bg-[#151c2c] dark:bg-[var(--card-bg-dark)]" style={{
             color: 'white',

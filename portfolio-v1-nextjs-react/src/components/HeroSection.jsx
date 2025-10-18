@@ -1,4 +1,4 @@
-export default function HeroSection({ darkMode }) {
+export default function HeroSection() {
     return(
         <section id="home" className="hero" style={{
             height: '100vh',
