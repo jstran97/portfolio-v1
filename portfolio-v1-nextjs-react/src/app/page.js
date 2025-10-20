@@ -21,7 +21,7 @@ export default function Home() {
       id: 1,
       title: "Facial Recognition Web Application",
       description: "A web app for detecting people's faces in the submitted photo. Each photo submission increases the user's entry count, which is stored in the database.",
-      image: "/videos/FacialRecognitionWebApp_Demo.mp4",
+      image: "/videos/FacialRecognitionWebApp_Demo_Zoom125Percent.mp4",
       mediaType: "video",
       tags: ["HTML", "CSS", "JavaScript", "React.js", "Express.js", "REST API", "Postman", "Machine Learning API (Clarifai)", "MacOS", "Render"],
       link: "https://github.com/jstran97/ztm-smartbrain"
