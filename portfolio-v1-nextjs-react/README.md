@@ -8,14 +8,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 2) If Next.js is not installed locally, add `./node_modules/.bin` to your PATH by running the following commands:<br/>
 For zsh (default on macOS):<br/>
 `nano ~/.zshrc`
+<br/>
+Add the PATH to the file by scrolling to the bottom, and adding the following line:<br/>
+`export PATH="./node_modules/.bin:$PATH`
 
-  Add the PATH to the file by scrolling to the bottom, and adding the following line:<br/>
-  `export PATH="./node_modules/.bin:$PATH`
+<br/>
+Exit `nano` by pressing `Ctrl + X`, then `Y` to confirm, and `Enter` to save.
 
-  Exit `nano` by pressing `Ctrl + X`, then `Y` to confirm, and `Enter` to save.
-
-  Apply the changes.<br/>
-  For zsh: `source ~/.zshrc`
+<br/>
+Apply the changes.<br/>
+For zsh: `source ~/.zshrc`
 
 
 3) Run the development server:
