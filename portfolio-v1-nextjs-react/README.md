@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 For zsh (default on macOS):<br/>
 `nano ~/.zshrc`
 
-  Add the PATH to the file by scrolling to the bottom, and adding the following line:<br/>
+\tAdd the PATH to the file by scrolling to the bottom, and adding the following line:<br/>
   `export PATH="./node_modules/.bin:$PATH`
 
   Exit `nano` by pressing `Ctrl + X`, then `Y` to confirm, and `Enter` to save.
