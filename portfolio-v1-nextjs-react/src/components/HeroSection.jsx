@@ -34,7 +34,7 @@ export default function HeroSection() {
                   color: 'var(--gray)',
                   textAlign: 'center'
                 }}>
-                  Software Engineer crafting beautiful and functional web experiences
+                  Software Engineer crafting functional applications and scripts
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'col', justifyContent: 'center', gap: '1rem' }}>
                   <a href="#projects" className="btn btn-primary">View My Work</a>
