@@ -2,9 +2,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-1) Ensure that Next.js is installed locally inside of project. If so, `next` and some version number will show up under `dependencies` within package.json file.
+1) Ensure that Next.js is installed locally inside of project. If so, `next` and some version number will show up under `dependencies` within `package.json` file.
 
-2) If Next.js is not installed locally, Add `./node_modules/.bin` to your PATH by running the following commands:
+
+2) If Next.js is not installed locally, add `./node_modules/.bin` to your PATH by running the following commands:
 For zsh (default on macOS):
 `nano ~/.zshrc`
 
@@ -16,7 +17,8 @@ Exit `nano` by pressing `Ctrl + X`, then `Y` to confirm, and `Enter` to save.
 Apply the changes.
 For zsh: `source ~/.zshrc`
 
-3) Run the development server:=
+
+3) Run the development server:
 ```bash
 npm run dev
 # or
