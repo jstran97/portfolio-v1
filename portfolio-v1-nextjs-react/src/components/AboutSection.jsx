@@ -14,11 +14,7 @@ export default function AboutSection() {
             <div className="container">
                 <h2 className="section-title">About Me</h2>
                 <div className="flex justify-center">
-                    <div className="grid gap-8 items-center w-full max-w-6xl"
-                        style={{
-                            gridTemplateColumns: 'repeat(2, minmax(200px, 1fr))'
-                        }}
-                    >
+                    <div className="about-structure">
                         <div className="flex justify-center">
                             <img
                                 src="/images/photo_of_me.png"

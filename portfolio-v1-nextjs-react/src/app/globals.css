@@ -134,6 +134,10 @@
   }
 
 
+  .about-structure {
+    @apply grid gap-8 items-center w-full max-w-6xl grid-cols-[custom-2-cols];
+  }
+
   /*
   text-sm - mobile (default)
   sm:text-base - tablet (640px+)
@@ -249,7 +253,9 @@
 }
 
 
-@media (max-width: 360px) {
-
+@media (max-width: 500px) {
+  .about-structure {
+    @apply flex flex-col justify-center;
+  }
 }
 
