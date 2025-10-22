@@ -26,33 +26,29 @@ export default function SkillSection() {
         <section id="skills" className="skills">
             <div className="container">
                 <h2 className="section-title">Skills recently used</h2>
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))',
-                    gap: '2rem'
-                }}>
-                {
-                    skillsWithComponents.map((skill, index) => (
-                        <div key={index} className="skill-item bg-[var(--card-bg)] dark:bg-[var(--card-bg-dark)]" style={{
-                            borderRadius: '10px',
-                            padding: '2rem 1rem',
-                            textAlign: 'center',
-                            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-                            transition: 'transform 0.3s ease'
-                            }}
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.transform = 'translateY(-5px)';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.transform = 'translateY(0)';
-                        }}>
-                            <div className="flex flex-col items-center justify-center">
-                                <skill.icon className={`text-2xl my-5 ${skill.color}`} size={50}/>
-                                <span className="font-medium text-black dark:text-[var(--light)]">{skill.name}</span>
+                <div className="flex items-center justify-center gap-8 flex-wrap">
+                    {
+                        skillsWithComponents.map((skill, index) => (
+                            <div key={index} className="skill-item bg-[var(--card-bg)] dark:bg-[var(--card-bg-dark)]" style={{
+                                borderRadius: '10px',
+                                padding: '2rem 2rem',
+                                textAlign: 'center',
+                                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                                transition: 'transform 0.3s ease'
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(-5px)';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.transform = 'translateY(0)';
+                            }}>
+                                <div className="flex flex-col items-center justify-center">
+                                    <skill.icon className={`text-2xl my-5 ${skill.color}`} size={50}/>
+                                    <span className="font-medium text-black dark:text-[var(--light)]">{skill.name}</span>
+                                </div>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
                 </div>
             </div>
         </section>
