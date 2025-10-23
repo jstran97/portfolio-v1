@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 1) Ensure that Next.js is installed locally inside of project. If so, **next and some version number** will show up under **dependencies** within `package.json` file.
 
 
-2) If Next.js is not installed locally, add `./node_modules/.bin` to your PATH by running the following commands:<br/>
+2) If you cannot run `next` commands in the terminal, then add `./node_modules/.bin` to your PATH by completing the following steps:<br/>
 For zsh (default on macOS):<br/>
 `nano ~/.zshrc`
 
